@@ -1,2 +1,2 @@
 # resampling-methods
-My answers and rationale for questions adapted from Introduction to Statistical Learning
+Discussion of questions adapted from An Introduction to Statistical Learning
