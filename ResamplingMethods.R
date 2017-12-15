@@ -22,7 +22,7 @@ table(Default$default[-train],pred)
 55/(55+23)
 # Let's try lowering the threshold to 0.2 to see if that will help
 pred = ifelse(x>0.2,"Yes","No")
-#Now we get an overall error rate of 4.5%, but we have decreased the number of defaulters the model misses to 43.6%
+#Now we get an overall error rate of 4.5%, but we have decreased the number of defaulters the model misses to 43.6% from 70% before
 (1/nrow(Default[-train,]))*sum(Default$default[-train]!=pred)
 sum(Default$default[-train]=="Yes")/nrow(Default[-train,])
 table(Default$default[-train],pred)
